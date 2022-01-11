@@ -3,6 +3,7 @@ package com.example.lab3game;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.hardware.Sensor;
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             // TODO Auto-generated constructor stub
 
             mDrawable = new ShapeDrawable(new OvalShape());
-            mDrawable.getPaint().setColor(0xffffAC23);
+            mDrawable.getPaint().setColor(Color.GREEN);
             mDrawable.setBounds(x, y, x + width, y + height);
 
         }
